@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# README
 
-You can use the [editor on GitHub](https://github.com/Reidond/weird_rails_but_ok/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Things you may want to cover:
 
-### Markdown
+* Ruby version
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* System dependencies
 
-```markdown
-Syntax highlighted code block
+* Configuration
 
-# Header 1
-## Header 2
-### Header 3
+* Database creation
 
-- Bulleted
-- List
+* Database initialization
 
-1. Numbered
-2. List
+* How to run the test suite
 
-**Bold** and _Italic_ and `Code` text
+* Services (job queues, cache servers, search engines, etc.)
 
-[Link](url) and ![Image](src)
-```
+* Deployment instructions
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Reidond/weird_rails_but_ok/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* ...
