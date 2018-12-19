@@ -3,19 +3,23 @@ class MemesController < ApplicationController
     before_action :authenticate_user!
 
     def show
-        @meme = Article.find(params[:id])
+        @meme = Meme.find(params[:id])
     end
 
-    def new; end
+    def new
+        @meme = Meme.new
+    end
     def create
-        @meme = Meme.new(meme_params)
+        @meme = current_user.memes.create(meme_params)
+        pp @meme
 
-        @meme.save
-        redirect_to @meme
+        if @meme.save
+            redirect_to root_path
+        end
     end
 
     private
     def meme_params
-        params.require(:article).permit(:title, :body)
+        params.require(:meme).permit(:title, :body)
     end
 end
