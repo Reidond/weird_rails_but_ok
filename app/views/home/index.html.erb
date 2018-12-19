@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Author</th>
     <th>Title</th>
     <th>Text</th>
     <th></th>
@@ -9,8 +10,9 @@
 
   <% @memes.each do |meme| %>
     <tr>
+      <td><%= meme.user.name %></td>
       <td><%= meme.title %></td>
-      <td><%= meme.text %></td>
+      <td><%= meme.body %></td>
       <td><%= link_to 'Show', meme_path(meme) %></td>
     </tr>
   <% end %>

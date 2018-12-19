@@ -5,6 +5,6 @@ class HomeController < ApplicationController
   end
 
   def show
-    @meme = Meme.find(params[:id])
+    @meme = Meme.find(params[:user_id])
   end
 end

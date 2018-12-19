@@ -1,4 +1,9 @@
 <p>
+  <strong>Author:</strong>
+  <%= @meme.user_name %>
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @meme.title %>
 </p>
@@ -8,4 +13,4 @@
   <%= @meme.body %>
 </p>
 
-<%= link_to 'Back', memes_path %>
+<%= link_to 'Back', root_path %>
