@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @comment.user_name %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @comment.body %>
+</p>
+
+<p>
+  <strong>Meme:</strong>
+  <%= @comment.meme_id %>
+</p>
+<% if current_user.name == @comment.user_name %>
+  <%= link_to 'Edit', edit_comment_path(@comment) %> |
+<% end %>
+<%= link_to 'Back', comments_path %>

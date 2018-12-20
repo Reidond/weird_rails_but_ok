@@ -1,5 +1,9 @@
-<h1>Listing memes</h1>
-
+<h2><%= @user.name %></h2>
+<% if @user.name == current_user.name %>
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% end %>
+<h2>Memes of this user:</h2>
 <table style="width:100%">
   <tr style="padding:15px">
     <th>Avatar</th>
@@ -10,7 +14,7 @@
     <th>Meme</th>
   </tr>
 
-  <% @memes.each do |meme| %>
+  <% @user.memes.each do |meme| %>
     <tr style="padding: 15px">
       <td><%= image_tag(meme.user.avatar.variant(resize: "50x50")) if meme.user.avatar.attached? %></td>
       <td><%= link_to meme.user.name, user_path(meme.user.name)%></td>

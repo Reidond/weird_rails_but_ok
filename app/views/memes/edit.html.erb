@@ -1,4 +1,4 @@
-<h1>New meme</h1>
+<h1>Edit meme</h1>
 <%= form_with model: @meme, local: true do |form| %>
   <% if @meme.errors.any? %>
     <div id="error_explanation">
@@ -13,11 +13,11 @@
   <% end %>
 
   <%# if flash[:notice] %>
-<!--    <div class="notice"><%#= flash[:notice] %></div>-->
+  <!--    <div class="notice"><%#= flash[:notice] %></div>-->
   <%# end %>
 
   <%# if flash[:alert] %>
-<!--    <div class="alert"><%#= flash[:alert] %></div>-->
+  <!--    <div class="alert"><%#= flash[:alert] %></div>-->
   <%# end %>
 
   <div class="field">
