@@ -8,8 +8,9 @@
     3. Короткий мем (short_meme - 120 символів без картинка)
 3. Можна сортувати по категоріям меми
 4. Не зареєстрований користувач може тільки передивлятися меми
-
-# Project workflow
-non-heroku-unstable will be used for active local development and changes should be
-published first to heroku-testing branch and after that if heroku-testing stable -  merge to
-master
+5. До мемів можна добавляти коментарі
+6. Кожен коментар має знаходитись по /comments і в ньго має зазначатись до якого мема він належить
+7. У мема також мають бути картинки і в залежності від його типу вони мають:
+    1. Бути у easy_meme та short_meme
+    2. Не бути у long_meme
+8. У кожного користувача має бути аватарка
