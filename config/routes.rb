@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   devise_for :users, :controllers => { registrations: 'registrations' }, :path_prefix => 'd'
   root 'home#index'
   resources :memes
