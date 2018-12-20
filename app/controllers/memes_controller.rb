@@ -4,6 +4,8 @@ class MemesController < ApplicationController
 
     def show
       @meme = Meme.find(params[:id])
+      @comments = @meme.comments.all
+      @comment = @meme.comments.build
     end
 
     def new
@@ -20,6 +22,11 @@ class MemesController < ApplicationController
 
       if @meme.meme_type == "long_meme" && @meme.picture.attached?
         flash[:alert] = "You can't add images to long_meme type"
+        redirect_to new_meme_path
+      end
+
+      if @meme.meme_type == "short_meme" && @meme.body.length > 120
+        flash[:alert] = "You can't add more than 120 symbols to short_meme type"
         redirect_to new_meme_path
       end
 
