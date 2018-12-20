@@ -25,6 +25,11 @@ class MemesController < ApplicationController
         redirect_to new_meme_path
       end
 
+      if @meme.meme_type == "short_meme" && @meme.body.length > 120
+        flash[:alert] = "You can't add more than 120 symbols to short_meme type"
+        redirect_to new_meme_path
+      end
+
       if @meme.save
         flash[:notice] = "Meme successfully created"
         redirect_to root_path
