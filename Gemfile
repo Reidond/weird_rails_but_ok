@@ -14,6 +14,7 @@ gem 'devise'
 gem 'bootstrap'
 gem 'react-rails'
 gem "google-cloud-storage", "~> 1.8", require: false
+gem 'activeadmin'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
