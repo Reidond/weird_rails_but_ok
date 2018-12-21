@@ -9,7 +9,7 @@ local:
 google:
   service: GCS
   project: weird-rails-but-ok-storage
-  credentials: <%= Rails.application.credentials.gcs_todo_pic.to_json %>
+  credentials: <%= Rails.application.credentials.gcs_weird_rails_but_ok.to_json %>
   bucket: tranquil-thicket-83842
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
