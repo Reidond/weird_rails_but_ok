@@ -14,3 +14,16 @@
     1. Бути у easy_meme та short_meme
     2. Не бути у long_meme
 8. У кожного користувача має бути аватарка
+
+# Railroady
+![Alt text](/doc/controllers_brief.svg)
+<img src="/doc/controllers_brief.svg">
+
+![Alt text](/doc/controllers_complete.svg)
+<img src="/doc/controllers_complete.svg">
+
+![Alt text](/doc/models_brief.svg)
+<img src="/doc/models_brief.svg">
+
+![Alt text](/doc/models_complete.svg)
+<img src="/doc/models_complete.svg">
