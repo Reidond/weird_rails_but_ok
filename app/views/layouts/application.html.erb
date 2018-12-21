@@ -16,6 +16,7 @@
     <% if alert %>
         <p class="alert alert-danger"><%= alert %></p>
     <% end %>
+    <%= link_to 'Мемний вісник', root_path %>
     <p class="navbar-text pull-right">
     <% if user_signed_in? %>
         Logged in as <strong><%= current_user.name %></strong>.
